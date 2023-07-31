@@ -14,13 +14,14 @@ public class Main {
 
             switch (option){
                 case 1 -> pessoas = functions.cadastrar();
+                case 2 -> functions.buscar(pessoas);
                 case 3 -> {
                     System.out.print("\nSaindo...\n");
                     System.exit(0);
                 }
                 default -> System.out.println("\nOpção inválida, tente novamente\n");
             }
-        }while(option != 3);
+        }while (option != 3);
 
     }
 }
